@@ -1,0 +1,17 @@
+<h1>Current Match Threads</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+  </tr>
+ 
+<% @match_threads.each do |thread| %>
+  <tr>
+    <td><a href="<%= thread.url %>"><%= thread.title %></a></td>
+    <td><%= thread.author %></td>
+  </tr>
+<% end %>
+</table>
+ 
+<br>
