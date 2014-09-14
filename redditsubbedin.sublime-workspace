@@ -1,0 +1,473 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"reme",
+				"remember_me"
+			],
+			[
+				"add",
+				"add_comment"
+			],
+			[
+				"gfycat",
+				"gfycat_response"
+			],
+			[
+				"get",
+				"get_gfycat"
+			],
+			[
+				"sub",
+				"submission"
+			],
+			[
+				"submission",
+				"submission_title"
+			],
+			[
+				"gfy",
+				"gfypurr"
+			],
+			[
+				"cr",
+				"cropping_parameters"
+			],
+			[
+				"check",
+				"check_axis"
+			],
+			[
+				"corre",
+				"correct_y"
+			],
+			[
+				"crop",
+				"crop_x1"
+			],
+			[
+				"Video",
+				"VideoFileClip"
+			],
+			[
+				"correc",
+				"correct_time"
+			],
+			[
+				"crop_",
+				"crop_x2"
+			],
+			[
+				"correct",
+				"correct_time"
+			],
+			[
+				"cropy",
+				"crop_y2"
+			],
+			[
+				"correct_",
+				"correct_coordinates"
+			],
+			[
+				"time_conv",
+				"time_convert"
+			],
+			[
+				"__",
+				"__init__"
+			],
+			[
+				"DIR",
+				"DIR"
+			],
+			[
+				"end",
+				"end_time"
+			],
+			[
+				"todo_",
+				"todo_list"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"compl",
+				"completed"
+			],
+			[
+				"comp",
+				"completed"
+			],
+			[
+				"complete",
+				"completed_at"
+			],
+			[
+				"click",
+				"click_link"
+			],
+			[
+				"todo",
+				"todo_list_todo_items_path"
+			],
+			[
+				"todo_list",
+				"todo_list"
+			],
+			[
+				"click_",
+				"click_button"
+			],
+			[
+				"to",
+				"to"
+			],
+			[
+				"visi",
+				"visit_todo_list"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/models/matchthread.rb",
+			"settings":
+			{
+				"buffer_size": 909,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/TK/mycode/redditsubbedin",
+		"/Users/TK/mycode/redditsubbedin/app",
+		"/Users/TK/mycode/redditsubbedin/app/controllers",
+		"/Users/TK/mycode/redditsubbedin/app/models"
+	],
+	"file_history":
+	[
+		"/Users/TK/mycode/redditsubbedin/app/models/matchthread.rb",
+		"/Users/TK/mycode/reddit_subbed_in/config/application.yml",
+		"/Users/TK/mycode/reddit_subbed_in/lib/api_clients/reddit_api/redd_connect.rb",
+		"/Users/TK/mycode/reddit_subbed_in/db/migrate/20140913190932_add_new_columns.rb",
+		"/Users/TK/mycode/reddit_subbed_in/db/migrate/20140913190247_add_new_column_to_my_table.rb",
+		"/Users/TK/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/TK/mycode/reddit_subbed_in/db/migrate/20140913170541_create_matchthreads.rb",
+		"/Users/TK/mycode/reddit_subbed_in/app/models/soccer_threads.rb",
+		"/Users/TK/mycode/flask/db_migrate.py",
+		"/Users/TK/mycode/flask/db_upgrade.py",
+		"/Users/TK/mycode/flask/db_downgrade.py",
+		"/Users/TK/mycode/flask/db_create.py",
+		"/Users/TK/Library/Application Support/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/Users/TK/Library/Application Support/Sublime Text 3/Packages/User/PythonImproved.sublime-settings",
+		"/Users/TK/mycode/flask/app/views.py",
+		"/Users/TK/mycode/flask/app/__init__.py",
+		"/Users/TK/mycode/flask/app/config.py",
+		"/Users/TK/mycode/sublime_projects/app/templates/index.html",
+		"/Users/TK/mycode/sublime_projects/run.py",
+		"/Users/TK/mycode/sublime_projects/app/views.py",
+		"/Users/TK/mycode/Gfypurr/.gitignore",
+		"/Users/TK/mycode/Gfypurr/gfypurr_config.cfg",
+		"/Users/TK/mycode/Gfypurr/gfypurr.py",
+		"/Users/TK/mycode/Gfypurr/original.py",
+		"/Users/TK/mycode/Gifted/main.py",
+		"/Users/TK/mycode/Gifted/gifted/gifted.py",
+		"/Users/TK/mycode/Gifted/gifted/__init__.py",
+		"/Users/TK/mycode/Gifted/gifted/docopt",
+		"/Users/TK/Desktop/Programming/gif maker/gif1.py",
+		"/Users/TK/mycode/feelings/static/welcome.html",
+		"/Users/TK/mycode/feelings/feelings/settings.py",
+		"/Users/TK/treehouse/projects/busybee/db/migrate/20140506222718_create_todo_items.rb",
+		"/Users/TK/treehouse/projects/busybee/config/routes.rb",
+		"/Users/TK/treehouse/projects/busybee/spec/features/todo_items/create_spec.rb",
+		"/Users/TK/treehouse/projects/busybee/app/controllers/todo_items_controller.rb",
+		"/Users/TK/treehouse/projects/busybee/app/views/todo_items/index.html.erb",
+		"/Users/TK/treehouse/projects/busybee/app/views/layouts/application.html.erb",
+		"/Users/TK/Dropbox/cs50/final project/code_documentation.txt",
+		"/Users/TK/treehouse/projects/busybee/app/views/todo_items/_form.html.erb",
+		"/Users/TK/treehouse/projects/busybee/app/views/todo_items/new.html.erb",
+		"/Users/TK/Dropbox/cs50/final project/documentation.txt",
+		"/Users/TK/treehouse/projects/busybee/Gemfile",
+		"/Users/TK/treehouse/projects/busybee/app/views/todo_lists/new.html.erb",
+		"/Users/TK/treehouse/projects/busybee/spec/features/todo_items/complete_spec.rb",
+		"/Users/TK/treehouse/projects/busybee/spec/models/todo_item_spec.rb",
+		"/Users/TK/treehouse/projects/busybee/app/models/todo_item.rb",
+		"/Users/TK/treehouse/projects/busybee/app/views/todo_lists/_form.html.erb",
+		"/Users/TK/treehouse/projects/busybee/app/views/todo_lists/edit.html.erb",
+		"/Users/TK/treehouse/projects/busybee/app/assets/stylesheets/application.css",
+		"/Users/TK/treehouse/projects/busybee/spec/support/todo_list_helpers.rb",
+		"/Users/TK/treehouse/projects/busybee/spec/support/rails_dom_id_helper.rb",
+		"/Users/TK/treehouse/projects/busybee/spec/routing/todo_lists_routing_spec.rb",
+		"/Users/TK/treehouse/projects/busybee/spec/spec_helper.rb",
+		"/Users/TK/treehouse/projects/busybee/spec/rails_dom_id_helper.rb",
+		"/Users/TK/treehouse/projects/busybee/spec/features/todo_lists/create_spec.rb",
+		"/Users/TK/treehouse/projects/busybee/app/views/todo_lists/index.html.erb",
+		"/Users/TK/treehouse/projects/busybee/db/migrate/20140507192835_add_completed_at_to_todo_items.rb",
+		"/Users/TK/treehouse/projects/busybee/app/assets/stylesheets/bootstrap_and_overrides.css",
+		"/Users/TK/treehouse/projects/busybee/app/assets/javascripts/application.js",
+		"/Users/TK/treehouse/projects/busybee/spec/features/todo_items/delete_spec.rb",
+		"/Users/TK/treehouse/projects/busybee/spec/controllers/todo_items_controller_spec.rb",
+		"/Users/TK/treehouse/projects/busybee/app/views/todo_items/edit.html.erb",
+		"/Users/TK/treehouse/projects/busybee/app/controllers/application_controller.rb",
+		"/Users/TK/treehouse/projects/busybee/spec/features/todo_items/edit_spec.rb",
+		"/Users/TK/treehouse/projects/busybee/app/views/todo_lists/show.html.erb",
+		"/Users/TK/treehouse/projects/busybee/app/models/todo_list.rb",
+		"/Users/TK/treehouse/projects/busybee/spec/features/todo_items/index_spec.rb",
+		"/Users/TK/treehouse/projects/busybee/spec/features/todo_lists/edit_spec.rb",
+		"/Users/TK/treehouse/projects/busybee/spec/features/todo_lists/destroy_spec.rb",
+		"/Users/TK/treehouse/projects/busybee/spec/models/todo_list_spec.rb",
+		"/Users/TK/treehouse/projects/busybee/spec/controllers/todo_lists_controller_spec.rb",
+		"/Users/TK/treehouse/projects/busybee/config/application.rb",
+		"/Users/TK/treehouse/projects/busybee/Gemfile.lock",
+		"/Users/TK/projects/beehive/Gemfile",
+		"/Users/TK/projects/beehive/app/models/user.rb",
+		"/Users/TK/projects/beehive/app/views/statuses/index.html.erb",
+		"/Users/TK/projects/beehive/app/views/layouts/application.html.erb",
+		"/Users/TK/projects/beehive/app/assets/stylesheets/application.css",
+		"/Users/TK/projects/beehive/app/views/devise/registrations/new.html.erb",
+		"/Users/TK/projects/beehive/app/assets/javascripts/statuses.js.coffee",
+		"/Users/TK/projects/beehive/app/assets/stylesheets/statuses.css.scss",
+		"/Users/TK/projects/beehive/db/migrate/20140505191310_devise_create_users.rb",
+		"/Users/TK/projects/beehive/config/environments/development.rb",
+		"/Users/TK/projects/beehive/config/routes.rb",
+		"/Users/TK/projects/beehive/config/application.rb",
+		"/Users/TK/projects/beehive/app/views/statuses/_form.html.erb",
+		"/Users/TK/projects/beehive/app/assets/stylesheets/bootstrap.css",
+		"/Users/TK/projects/beehive/app/models/status.rb",
+		"/Users/TK/projects/beehive/app/assets/stylesheets/scaffolds.css.scss",
+		"/Users/TK/projects/beehive/app/controllers/statuses_controller.rb",
+		"/Users/TK/projects/beehive/app/views/statuses/new.html.erb",
+		"/Users/TK/projects/beehive/app/controllers/application_controller.rb",
+		"/Users/TK/Dropbox/cs50/final/helloworld/popup.html",
+		"/Users/TK/Dropbox/cs50/final/helloworld/manifest.json",
+		"/Users/TK/Dropbox/cs50/final/helloworld/popup.js",
+		"/Users/TK/Dropbox/cs50/Final Project/1.9.10.2_0/popup.html",
+		"/Users/TK/Dropbox/cs50/Final Project/1.9.10.2_0/lib/tweets_assembler.js",
+		"/Users/TK/Dropbox/cs50/Final Project/1.9.10.2_0/lib/debug.js",
+		"/Users/TK/Dropbox/cs50/final/twitter.js",
+		"/Users/TK/Downloads/service.js",
+		"/Users/TK/Dropbox/pset8/js/houses.js",
+		"/Users/TK/Dropbox/pset8/js/buildings.js",
+		"/Users/TK/Dropbox/pset7/templates/portfolio.php",
+		"/Users/TK/Dropbox/pset7/templates/apology.php",
+		"/Users/TK/Dropbox/pset7/public/css/styles.css",
+		"/Users/TK/Dropbox/pset7/public/login.php",
+		"/Users/TK/Dropbox/pset7/public/index.php",
+		"/Users/TK/Dropbox/pset7/templates/login_form.php",
+		"/Users/TK/Dropbox/pset7/includes/functions.php",
+		"/Users/TK/Dropbox/pset7/includes/config.php",
+		"/Users/TK/Dropbox/pset7/includes/constants.php",
+		"/Users/TK/Dropbox/pset7/public/js/jquery-1.10.2.js",
+		"/Users/TK/Dropbox/pset7/templates/header.php",
+		"/Users/TK/Dropbox/pset7/templates/dump.php"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"LoginForm",
+			"read",
+			"password",
+			"int",
+			"start_time",
+			"doc",
+			" \n",
+			"error_explanation",
+			"content",
+			"contents",
+			"houses",
+			"todo",
+			"extract"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"start_time"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/models/matchthread.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 909,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "redditsubbedin.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"todo_items_",
+				"app/controllers/todo_items_controller.rb"
+			],
+			[
+				"ge",
+				"Gemfile"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 245.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -4,12 +4,15 @@
   <tr>
     <th>Title</th>
     <th>Author</th>
+    <th>Kickoff</th>
   </tr>
  
 <% @match_threads.each do |thread| %>
   <tr>
-    <td><a href="<%= thread.url %>"><%= thread.title %></a></td>
+    <!--<td><a href="<%= thread.url %>"><%= thread.title %></a></td>-->
+    <td><%= link_to thread.title, matchthread_path(thread) %></td>
     <td><%= thread.author %></td>
+    <td><%= thread.id %></td>
   </tr>
 <% end %>
 </table>

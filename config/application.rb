@@ -2,8 +2,8 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 # make lib available everywhere
-config.autoload_paths += %W(#{config.root}/lib)
-config.autoload_paths += Dir["#{config.root}/lib/**/"]
+# config.autoload_paths += %W(#{config.root}/lib)
+# config.autoload_paths += Dir["#{config.root}/lib/**/"]
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.

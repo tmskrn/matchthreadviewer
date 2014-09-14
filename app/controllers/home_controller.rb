@@ -1,5 +1,4 @@
 class HomeController < ApplicationController
-
   def index
 	@match_threads = Matchthread.get_matches
 
