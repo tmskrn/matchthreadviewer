@@ -6,26 +6,23 @@ class Matchthread < ActiveRecord::Base
 		connection = Redd::Client::Authenticated.new_from_credentials ENV["REDDIT_USER"], ENV["REDDIT_PASSWORD"]
 		@hot_threads = connection.get_hot('soccer')
 
-		match_threads = []
-
-		id = 0
-
 		@hot_threads.each do |thread|
 			if thread.title.match(/match.{0,1}thread/i) and 
 				!thread.title.match(/(Pre|Post)(\W{0,1}|\s{1})/i)
-				@Matchthread = Matchthread.new(
-					id:id,
+				if Matchthread.exists?(:title => thread.title)
+					@Matchthread = Matchthread.find(:title == thread.title)
+					@Matchthread.text = thread.selftext
+					@Matchthread.save
+				else
+					@Matchthread = Matchthread.create(
 					title:thread.title,
 					text:thread.selftext, 
 					author:thread.author, 
 					url:thread.url, 
 					kickoff:DateTime.now)
-				match_threads << @Matchthread
-				id += 1
+				end
 			end
 		end
-		
-		return match_threads
 	end
 
 	def get_kickoff(thread)

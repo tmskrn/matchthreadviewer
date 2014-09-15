@@ -27,10 +27,16 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 # Redd is an api-wrapper for reddit
-gem 'redditkit', '~> 1.0.1'
 gem 'redd'
+# Sinatra helps keeping the ENV secret
 gem 'sinatra'
+# Lookup?
 gem 'figaro'
+# Used for Markdown formatting. Name view so it ends in .md
+gem 'markdown-rails'
+# Also needed for Markdown handling. See:
+# http://stackoverflow.com/questions/4163560/how-can-i-automatically-render-partials-using-markdown-in-rails-3/10131299#10131299
+gem 'rdiscount'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

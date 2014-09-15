@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
   def index
-	@match_threads = Matchthread.get_matches
+  	Matchthread.get_matches
+	@match_threads = Matchthread.where(created_at: (Time.now - 12.hour)..Time.now)
 
 	#TODO: Put API Call in Lib
 	#TODO: OAuth?
