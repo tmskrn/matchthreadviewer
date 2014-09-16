@@ -9,12 +9,14 @@ class Matchthread < ActiveRecord::Base
 		@hot_threads.each do |thread|
 			if thread.title.match(/match.{0,1}thread/i) and 
 				!thread.title.match(/(Pre|Post)(\W{0,1}|\s{1})/i)
-				if Matchthread.exists?(:title => thread.title)
-					@Matchthread = Matchthread.find(:title == thread.title)
+				puts thread.id
+				if Matchthread.exists?(:thread_id => thread.id)
+					@Matchthread = Matchthread.find_by(thread_id: thread.id)
 					@Matchthread.text = thread.selftext
 					@Matchthread.save
 				else
 					@Matchthread = Matchthread.create(
+					thread_id:thread.id,
 					title:thread.title,
 					text:thread.selftext, 
 					author:thread.author, 

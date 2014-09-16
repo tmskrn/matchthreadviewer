@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140914141304) do
+ActiveRecord::Schema.define(version: 20140916200253) do
 
   create_table "matchthreads", force: true do |t|
     t.string   "title"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20140914141304) do
     t.datetime "updated_at"
     t.string   "url"
     t.datetime "kickoff"
+    t.string   "thread_id"
   end
 
 end
