@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   get '/matchthreads/:thread_id', to: 'matchthreads#show', as: 'matchthread'
+  get '/matchthreads/:thread_id/comments/', to: 'comments#show', as: 'comment'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

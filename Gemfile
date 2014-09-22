@@ -37,6 +37,12 @@ gem 'markdown-rails'
 # Also needed for Markdown handling. See:
 # http://stackoverflow.com/questions/4163560/how-can-i-automatically-render-partials-using-markdown-in-rails-3/10131299#10131299
 gem 'rdiscount'
+# For reddit-like comment threads
+# http://stackoverflow.com/questions/463936/reddit-style-nested-threaded-indented-comments-for-rails
+gem 'acts_as_tree'
+# Handling the background processes, such as the API calls
+gem 'sidekiq'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
