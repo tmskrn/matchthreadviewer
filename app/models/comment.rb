@@ -1,9 +1,8 @@
 class Comment < ActiveRecord::Base
 	acts_as_tree :order => 'created_at'
 
-	def self.get_comments(thread_fullname)
-		@connection = Redd::Client::Unauthenticated.new
-		@thread = @connection.by_id(thread_fullname)
+	def self.get_comments(connection, thread_fullname)
+		@thread = connection.by_id(thread_fullname)
 
 		@thread.each do |thread|
 			self.get_replies(thread)
@@ -22,7 +21,9 @@ class Comment < ActiveRecord::Base
 		self.store_comments(@comments)
 
 		@comments.each do |comment|
-			self.get_replies(comment)
+			unless comment.instance_of?(Redd::Object::MoreComments)
+				self.get_replies(comment)
+			end
 		end
 	end
 
@@ -34,22 +35,23 @@ class Comment < ActiveRecord::Base
 				parent_id = 0
 			end
 
-			if Comment.exists?(:comment_id => comment.id)
-				@Comment = Comment.find_by(comment_id: comment.id)
-				@Comment.content = comment.body
-				@Comment.parent_id = parent_id
-				@Comment.save
-			else
-				@Comment = Comment.create(
-				parent_id: parent_id,
-				content:comment.body,
-				author:comment.author,
-				score:comment.score,
-				created_at:comment.created,
-				thread_id:comment.link_id,
-				comment_id:comment.id)
+			unless comment.instance_of?(Redd::Object::MoreComments)
+				if Comment.exists?(:comment_id => comment.id)
+					@Comment = Comment.find_by(comment_id: comment.id)
+					@Comment.content = comment.body
+					@Comment.parent_id = parent_id
+					@Comment.save
+				else
+					@Comment = Comment.create(
+					parent_id: parent_id,
+					content:comment.body,
+					author:comment.author,
+					score:comment.score,
+					created_at:comment.created,
+					thread_id:comment.link_id,
+					comment_id:comment.id)
+				end
 			end
 		end
 	end
-	
 end

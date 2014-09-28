@@ -41,7 +41,12 @@ gem 'rdiscount'
 # http://stackoverflow.com/questions/463936/reddit-style-nested-threaded-indented-comments-for-rails
 gem 'acts_as_tree'
 # Handling the background processes, such as the API calls
-gem 'sidekiq'
+gem 'delayed_job_active_record'
+# Starting and running the background processes
+gem 'daemons'
+# Periodically running the API updates
+gem 'whenever'
+
 
 
 # Use ActiveModel has_secure_password
