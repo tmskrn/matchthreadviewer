@@ -34,6 +34,7 @@ gem 'sinatra'
 gem 'figaro'
 # Used for Markdown formatting. Name view so it ends in .md
 gem 'markdown-rails'
+gem 'redcarpet'
 # Also needed for Markdown handling. See:
 # http://stackoverflow.com/questions/4163560/how-can-i-automatically-render-partials-using-markdown-in-rails-3/10131299#10131299
 gem 'rdiscount'
@@ -46,6 +47,11 @@ gem 'delayed_job_active_record'
 gem 'daemons'
 # Periodically running the API updates
 gem 'whenever'
+# Twitter Bootstrap styling
+gem 'therubyracer'
+gem 'libv8', '3.16.14.3'
+gem "less-rails"
+gem 'twitter-bootstrap-rails'
 
 
 

@@ -18,7 +18,7 @@ class Comment < ActiveRecord::Base
 			@comments = object.comments
 		end
 
-		self.store_comments(@comments)
+		self.save_comments(@comments)
 
 		@comments.each do |comment|
 			unless comment.instance_of?(Redd::Object::MoreComments)
@@ -27,7 +27,7 @@ class Comment < ActiveRecord::Base
 		end
 	end
 
-	def self.store_comments(comments)
+	def self.save_comments(comments)
 		comments.each do |comment| 
 			if !(comment.parent_id[0..1] == "t3") # comment is not root
 				parent_id = Comment.find_by(comment_id: comment.parent_id[3..-1]).id

@@ -1,6 +1,6 @@
-<div id="comment_<%= comment.id %>">
-  <p><%= comment.content %></p>
-  <% if comment.children.count > 0 -%>
-  	<p><%= render :partial => 'comments/comment', :collection => comment.children %></p>
-  <% end -%>
+<div class="nested" id="comment_<%= comment.id %>">
+  <%= markdown comment.content %>
+  <% if comment.children.count > 0 %>
+  	<%= render partial: 'comments/comment', collection: comment.children %>
+  <% end %>
 </div>
