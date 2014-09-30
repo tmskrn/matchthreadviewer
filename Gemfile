@@ -33,7 +33,6 @@ gem 'sinatra'
 # Lookup?
 gem 'figaro'
 # Used for Markdown formatting. Name view so it ends in .md
-gem 'markdown-rails'
 gem 'redcarpet'
 # Also needed for Markdown handling. See:
 # http://stackoverflow.com/questions/4163560/how-can-i-automatically-render-partials-using-markdown-in-rails-3/10131299#10131299
