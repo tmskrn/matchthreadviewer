@@ -51,7 +51,15 @@ gem 'therubyracer'
 gem 'libv8', '3.16.14.3'
 gem "less-rails"
 gem 'twitter-bootstrap-rails'
+# convert score to words
+gem 'humanize'
+# bootswatch integration
+# twitter bootstrap css & javascript toolkit
+gem 'twitter-bootswatch-rails', '~> 3.2.0'
+gem 'twitter-bootswatch-rails-fontawesome', '~> 4.0'
 
+# twitter bootstrap helpers gem, e.g., alerts etc...
+gem 'twitter-bootswatch-rails-helpers'
 
 
 # Use ActiveModel has_secure_password

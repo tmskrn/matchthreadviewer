@@ -1,6 +1,6 @@
 class Matchthread < ActiveRecord::Base
 	def self.get_matches(connection)
-		@hot_threads = connection.get_hot('soccer')
+		@hot_threads = connection.get_hot('soccer', limit: 100)
 
 		@hot_threads.each do |thread|
 			if thread.title.match(/match.{0,1}thread/i) and 

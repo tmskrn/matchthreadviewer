@@ -7,9 +7,9 @@ class ReddJobs
 		redd = ReddJobs.new
 		redd.unauthenticated_connection
 
-		redd.delay.update_matchthreads
+		redd.update_matchthreads
 		self.wait
-		redd.delay.update_comments
+		redd.update_comments
 		self.wait
 		puts "Updated matchthreads and comments successfully at: " + Time.now.to_s
 	end
@@ -28,7 +28,6 @@ class ReddJobs
 			fullname = 't3_' + thread.thread_id.to_s
 			Comment.get_comments(@connection, fullname)
 			self.class.wait
-			# puts "Updated comments for " + thread.title.to_s
 		end
 	end
 

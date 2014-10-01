@@ -1,6 +1,9 @@
-<div class="nested" id="comment_<%= comment.id %>">
-  <%= markdown comment.content %>
+<blockquote class= "nested root" id="comment_<%= comment.id %>">
+  <p><%= markdown comment.content %></p>
+  <footer><%= comment.score.humanize %> point<%= "s" unless comment.score == 1 %> by <%= comment.author %></footer>
   <% if comment.children.count > 0 %>
+  <blockquote class= "nested">
   	<%= render partial: 'comments/comment', collection: comment.children %>
+  </blockquote>
   <% end %>
-</div>
+</blockquote>

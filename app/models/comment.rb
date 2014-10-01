@@ -29,17 +29,18 @@ class Comment < ActiveRecord::Base
 
 	def self.save_comments(comments)
 		comments.each do |comment| 
-			if !(comment.parent_id[0..1] == "t3") # comment is not root
-				parent_id = Comment.find_by(comment_id: comment.parent_id[3..-1]).id
-			else 
-				parent_id = 0
-			end
+			unless comment.instance_of?(Redd::Object::MoreComments)	
+				if !(comment.parent_id[0..1] == "t3") # comment is not root
+					parent_id = Comment.find_by(comment_id: comment.parent_id[3..-1]).id
+				else 
+					parent_id = 0
+				end
 
-			unless comment.instance_of?(Redd::Object::MoreComments)
 				if Comment.exists?(:comment_id => comment.id)
 					@Comment = Comment.find_by(comment_id: comment.id)
 					@Comment.content = comment.body
 					@Comment.parent_id = parent_id
+					@Comment.score = comment.score
 					@Comment.save
 				else
 					@Comment = Comment.create(

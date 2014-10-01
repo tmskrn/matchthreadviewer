@@ -9,8 +9,7 @@
 	  <%= render "comments/show" %>
 	</div>
 	<div class="col-md-4">
-		<h1>Match-Ticker</h1>
-		<h2><%= link_to 'view comments', comment_path(@matchthread.thread_id) %></h2>
+		<h2>Match-Ticker</h2>
 		<p><%= markdown @matchthread.text %></p>
 	</div>
 </div>

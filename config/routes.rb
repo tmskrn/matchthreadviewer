@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'matchthreads/matchthread'
-
   get 'home/index'
   root 'home#index'
 
