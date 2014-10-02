@@ -63,8 +63,10 @@ gem 'twitter-bootswatch-rails-helpers'
 
 # Heroku integration
 gem 'rails_12factor', group: :production
+# Production Webserver
+gem 'unicorn'
 
-ruby "2.1.1"
+ruby "2.0.0"
 
 
 # Use ActiveModel has_secure_password
