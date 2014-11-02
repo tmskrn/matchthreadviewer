@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140927091013) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "comments", force: true do |t|
     t.integer  "parent_id"
     t.string   "title"
@@ -39,7 +42,7 @@ ActiveRecord::Schema.define(version: 20140927091013) do
     t.datetime "updated_at"
   end
 
-  add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority"
+  add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
 
   create_table "matchthreads", force: true do |t|
     t.string   "title"
