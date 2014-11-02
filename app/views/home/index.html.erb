@@ -1,6 +1,7 @@
 <h1>Current Match Threads</h1>
 <table>
   <tr>
+    <th>Score</th>
     <th>Title</th>
     <th>Author</th>
     <th>Thread ID</th>
@@ -8,6 +9,7 @@
  
 <% @match_threads.each do |thread| %>
   <tr>
+    <td><%= thread.score %></td>
     <td><%= link_to thread.title, matchthread_path(thread.thread_id) %></td>
     <td><%= thread.author %></td>
     <td><%= thread.thread_id %></td>

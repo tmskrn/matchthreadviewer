@@ -9,10 +9,12 @@ class Matchthread < ActiveRecord::Base
 				if Matchthread.exists?(:thread_id => thread.id)
 					@Matchthread = Matchthread.find_by(thread_id: thread.id)
 					@Matchthread.text = thread.selftext
+					@Matchthread.score = thread.score
 					@Matchthread.save
 				else
 					@Matchthread = Matchthread.create(
 					thread_id:thread.id,
+					score:thread.score,
 					title:thread.title,
 					text:thread.selftext, 
 					author:thread.author, 
