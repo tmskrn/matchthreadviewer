@@ -5,7 +5,7 @@ class ReddJobs
 		
 		#@connection = Redd::Client::Authenticated.new_from_credentials ENV["REDDIT_USER"], ENV["REDDIT_PASSWORD"]
 		redd = ReddJobs.new
-		redd.unauthenticated_connection
+		redd.authenticated_connection
 
 		redd.update_matchthreads
 		self.wait
@@ -14,8 +14,9 @@ class ReddJobs
 		puts "Updated matchthreads and comments successfully at: " + Time.now.to_s
 	end
 
-	def unauthenticated_connection
-		@connection = Redd::Client::Unauthenticated.new
+	def authenticated_connection
+		#@connection = Redd::Client::Unauthenticated.new
+		@connection = Redd::Client::Authenticated.new_from_credentials ENV["REDDIT_USER"], ENV["REDDIT_PASSWORD"]
 	end
 
 	def update_matchthreads
