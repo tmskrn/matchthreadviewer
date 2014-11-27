@@ -4,3 +4,9 @@ task :update_threads => :environment do
   ReddJobs.update
   puts "done."
 end
+
+task :clear_old => :environment do
+	puts "Deleting matchthreads and comments more than a week ago."
+	ReddJobs.clear_old
+	puts "done."
+end
