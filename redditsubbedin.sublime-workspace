@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"el",
+				"elsif	elsif ..."
+			],
+			[
+				"thread",
+				"thread_fulltext"
+			],
+			[
+				"thre",
+				"thread_id"
+			],
+			[
 				"reme",
 				"remember_me"
 			],
@@ -135,67 +147,11 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/models/matchthread.rb",
-			"settings":
-			{
-				"buffer_size": 1420,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/home_controller.rb",
-			"settings":
-			{
-				"buffer_size": 323,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/home/index.html.erb",
-			"settings":
-			{
-				"buffer_size": 347,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/routes.rb",
-			"settings":
-			{
-				"buffer_size": 1753,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/matchthreads_controller.rb",
-			"settings":
-			{
-				"buffer_size": 199,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/matchthreads/show.html.md",
-			"settings":
-			{
-				"buffer_size": 69,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/application.rb",
-			"settings":
-			{
-				"buffer_size": 1154,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 47.0,
+		"height": 400.0,
 		"selected_items":
 		[
 			[
@@ -203,11 +159,15 @@
 				"Package Control: Install Package"
 			],
 			[
+				"install package",
+				"Package Control: Install Package"
+			],
+			[
 				"Pack",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 449.0
+		"width": 538.0
 	},
 	"console":
 	{
@@ -231,25 +191,87 @@
 		"/Users/TK/mycode/redditsubbedin",
 		"/Users/TK/mycode/redditsubbedin/app",
 		"/Users/TK/mycode/redditsubbedin/app/controllers",
+		"/Users/TK/mycode/redditsubbedin/app/jobs",
 		"/Users/TK/mycode/redditsubbedin/app/models",
 		"/Users/TK/mycode/redditsubbedin/app/views",
+		"/Users/TK/mycode/redditsubbedin/app/views/comments",
 		"/Users/TK/mycode/redditsubbedin/app/views/home",
 		"/Users/TK/mycode/redditsubbedin/app/views/layouts",
 		"/Users/TK/mycode/redditsubbedin/app/views/matchthreads",
 		"/Users/TK/mycode/redditsubbedin/config",
-		"/Users/TK/mycode/redditsubbedin/db",
-		"/Users/TK/mycode/redditsubbedin/db/migrate",
-		"/Users/TK/mycode/redditsubbedin/lib"
+		"/Users/TK/mycode/redditsubbedin/lib",
+		"/Users/TK/mycode/redditsubbedin/lib/tasks",
+		"/Users/TK/mycode/redditsubbedin/log"
 	],
 	"file_history":
 	[
-		"/Users/TK/mycode/redditsubbedin/db/schema.rb",
-		"/Users/TK/mycode/redditsubbedin/lib/markdown_handler.rb",
-		"/Users/TK/mycode/redditsubbedin/Gemfile",
-		"/Users/TK/mycode/redditsubbedin/config/application.rb",
-		"/Users/TK/mycode/redditsubbedin/app/views/matchthreads/matchthread.html.erb",
-		"/Users/TK/mycode/redditsubbedin/app/views/matchthreads/show.html.erb",
+		"/Users/TK/mycode/redditsubbedin/app/views/layouts/application.html.erb",
+		"/Users/TK/mycode/redditsubbedin/app/views/home/index.html.erb",
+		"/Users/TK/mycode/redditsubbedin/app/jobs/redd_jobs.rb",
 		"/Users/TK/mycode/redditsubbedin/app/models/matchthread.rb",
+		"/Users/TK/mycode/redditsubbedin/app/controllers/home_controller.rb",
+		"/Users/TK/mycode/redditsubbedin/log/cron_error_log.log",
+		"/Users/TK/mycode/redditsubbedin/lib/tasks/scheduler.rake",
+		"/Users/TK/mycode/redditsubbedin/log/development.log",
+		"/Users/TK/mycode/redditsubbedin/log/production.log",
+		"/Users/TK/mycode/redditsubbedin/config/schedule.rb",
+		"/Users/TK/mycode/redditsubbedin/log/cron_log.log",
+		"/Users/TK/mycode/redditsubbedin/log/developmen.log",
+		"/Users/TK/mycode/redditsubbedin/db/schema.rb",
+		"/Users/TK/mycode/redditsubbedin/db/migrate/20141102141454_add_score_to_matchthreads.rb",
+		"/Users/TK/mycode/redditsubbedin/app/models/comment.rb",
+		"/Users/TK/mycode/redditsubbedin/app/views/matchthreads/show.html.erb",
+		"/Users/TK/mycode/redditsubbedin/app/controllers/matchthreads_controller.rb",
+		"/Users/TK/mycode/redditsubbedin/Gemfile",
+		"/Users/TK/mycode/redditsubbedin/config/unicorn.rb",
+		"/Users/TK/mycode/redditsubbedin/Procfile",
+		"/Users/TK/mycode/redditsubbedin/config/database.yml",
+		"/Users/TK/mycode/redditsubbedin/app/assets/javascripts/flatly.js",
+		"/Users/TK/mycode/redditsubbedin/app/assets/stylesheets/flatly.css",
+		"/Users/TK/mycode/redditsubbedin/app/views/comments/_comment.html.erb",
+		"/Users/TK/mycode/redditsubbedin/app/assets/stylesheets/comments.css.scss",
+		"/Users/TK/mycode/redditsubbedin/config/initializers/assets.rb",
+		"/Users/TK/mycode/redditsubbedin/app/assets/stylesheets/simplex/bootswatch.css.less",
+		"/Users/TK/mycode/redditsubbedin/app/views/layouts/flatly.html.erb",
+		"/Users/TK/mycode/redditsubbedin/app/assets/stylesheets/application.css",
+		"/Users/TK/mycode/redditsubbedin/app/assets/javascripts/application.js",
+		"/Users/TK/mycode/redditsubbedin/app/assets/stylesheets/bootstrap_and_overrides.css.less",
+		"/Users/TK/mycode/redditsubbedin/app/assets/stylesheets/flatly/bootswatch.css.less",
+		"/Users/TK/mycode/redditsubbedin/config/routes.rb",
+		"/Users/TK/mycode/redditsubbedin/app/views/matchthreads/matchthread.html.erb",
+		"/Users/TK/mycode/redditsubbedin/app/views/comments/_show.html.erb",
+		"/Users/TK/mycode/redditsubbedin/app/controllers/comments_controller.rb",
+		"/Users/TK/mycode/redditsubbedin/config/application.rb",
+		"/Users/TK/mycode/redditsubbedin/app/views/comments/show.html.erb",
+		"/Users/TK/mycode/redditsubbedin/app/helpers/application_helper.rb",
+		"/Users/TK/mycode/redditsubbedin/log/whenever_api_calls.log",
+		"/Users/TK/mycode/redditsubbedin/log/whenver_api_calls.log",
+		"/Users/TK/mycode/redditsubbedin/app/jobs/redd_api_refresh_jobs.rb",
+		"/Users/TK/mycode/redditsubbedin/app/views/matchthreads/show.html.md",
+		"/Users/TK/mycode/redditsubbedin/db/migrate/20140922184821_add_comment_id_to_comments.rb",
+		"/Users/TK/mycode/redditsubbedin/db/migrate/20140922184440_rename_thread_comments_to_comments.rb",
+		"/Users/TK/mycode/redditsubbedin/db/migrate/20140922183302_create_comments_again.rb",
+		"/Users/TK/mycode/redditsubbedin/db/migrate/20140922183719_create_table_comments.rb",
+		"/Users/TK/mycode/redditsubbedin/db/migrate/20140922184035_rename_parent_id_id_column_in_comments.rb",
+		"/Users/TK/mycode/redditsubbedin/db/migrate/20140922184216_rename_table_comments_to_comments.rb",
+		"/Users/TK/mycode/redditsubbedin/db/migrate/20140922184342_drop_comments_table.rb",
+		"/Users/TK/mycode/redditsubbedin/db/migrate/20140922183625_change_parent_id_type_in_comments.rb",
+		"/Users/TK/mycode/redditsubbedin/db/migrate/20140922182444_change_parent_id_type_in_comments.rb",
+		"/Users/TK/mycode/redditsubbedin/db/migrate/20140922181931_change_parent_id_type_in_comments.rb",
+		"/Users/TK/mycode/redditsubbedin/db/migrate/20140922181527_change_parent_id_type_in_comments.rb",
+		"/Users/TK/mycode/redditsubbedin/db/migrate/20140920143840_add_comment_id_and_parent_id_to_comments.rb",
+		"/Users/TK/mycode/redditsubbedin/db/migrate/20140920143720_add_comment_id_and_parent_id_to_comments.rb",
+		"/Users/TK/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/TK/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/TK/Library/Application Support/Sublime Text 3/Packages/User/Ruby.sublime-settings",
+		"/Users/TK/mycode/redditsubbedin/db/migrate/20140919212630_add_thread_id_to_comments.rb",
+		"/Users/TK/mycode/redditsubbedin/db/migrate/20090121025349_create_comments.rb",
+		"/Users/TK/Desktop/Tomorrow Night Blue.xml",
+		"/Users/TK/Desktop/Tomorrow Night Eighties.terminal",
+		"/Users/TK/mycode/redditsubbedin/config/initializers/cookies_serializer.rb",
+		"/Users/TK/mycode/redditsubbedin/config/initializers/session_store.rb",
+		"/Users/TK/mycode/redditsubbedin/config/initializers/inflections.rb",
+		"/Users/TK/mycode/redditsubbedin/lib/markdown_handler.rb",
 		"/Users/TK/mycode/redditsubbedin/db/migrate/20140913191850_add_details_to_matchthreads.rb",
 		"/Users/TK/mycode/redditsubbedin/db/migrate/20140914141304_add_id_to_matchthreads.rb",
 		"/Users/TK/mycode/redditsubbedin/db/migrate/20140914105639_add_id_to_matchthreads.rb",
@@ -257,7 +279,6 @@
 		"/Users/TK/mycode/reddit_subbed_in/lib/api_clients/reddit_api/redd_connect.rb",
 		"/Users/TK/mycode/reddit_subbed_in/db/migrate/20140913190932_add_new_columns.rb",
 		"/Users/TK/mycode/reddit_subbed_in/db/migrate/20140913190247_add_new_column_to_my_table.rb",
-		"/Users/TK/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/Users/TK/mycode/reddit_subbed_in/db/migrate/20140913170541_create_matchthreads.rb",
 		"/Users/TK/mycode/reddit_subbed_in/app/models/soccer_threads.rb",
 		"/Users/TK/mycode/flask/db_migrate.py",
@@ -311,65 +332,11 @@
 		"/Users/TK/treehouse/projects/busybee/db/migrate/20140507192835_add_completed_at_to_todo_items.rb",
 		"/Users/TK/treehouse/projects/busybee/app/assets/stylesheets/bootstrap_and_overrides.css",
 		"/Users/TK/treehouse/projects/busybee/app/assets/javascripts/application.js",
-		"/Users/TK/treehouse/projects/busybee/spec/features/todo_items/delete_spec.rb",
-		"/Users/TK/treehouse/projects/busybee/spec/controllers/todo_items_controller_spec.rb",
-		"/Users/TK/treehouse/projects/busybee/app/views/todo_items/edit.html.erb",
-		"/Users/TK/treehouse/projects/busybee/app/controllers/application_controller.rb",
-		"/Users/TK/treehouse/projects/busybee/spec/features/todo_items/edit_spec.rb",
-		"/Users/TK/treehouse/projects/busybee/app/views/todo_lists/show.html.erb",
-		"/Users/TK/treehouse/projects/busybee/app/models/todo_list.rb",
-		"/Users/TK/treehouse/projects/busybee/spec/features/todo_items/index_spec.rb",
-		"/Users/TK/treehouse/projects/busybee/spec/features/todo_lists/edit_spec.rb",
-		"/Users/TK/treehouse/projects/busybee/spec/features/todo_lists/destroy_spec.rb",
-		"/Users/TK/treehouse/projects/busybee/spec/models/todo_list_spec.rb",
-		"/Users/TK/treehouse/projects/busybee/spec/controllers/todo_lists_controller_spec.rb",
-		"/Users/TK/treehouse/projects/busybee/config/application.rb",
-		"/Users/TK/treehouse/projects/busybee/Gemfile.lock",
-		"/Users/TK/projects/beehive/Gemfile",
-		"/Users/TK/projects/beehive/app/models/user.rb",
-		"/Users/TK/projects/beehive/app/views/statuses/index.html.erb",
-		"/Users/TK/projects/beehive/app/views/layouts/application.html.erb",
-		"/Users/TK/projects/beehive/app/assets/stylesheets/application.css",
-		"/Users/TK/projects/beehive/app/views/devise/registrations/new.html.erb",
-		"/Users/TK/projects/beehive/app/assets/javascripts/statuses.js.coffee",
-		"/Users/TK/projects/beehive/app/assets/stylesheets/statuses.css.scss",
-		"/Users/TK/projects/beehive/db/migrate/20140505191310_devise_create_users.rb",
-		"/Users/TK/projects/beehive/config/environments/development.rb",
-		"/Users/TK/projects/beehive/config/routes.rb",
-		"/Users/TK/projects/beehive/config/application.rb",
-		"/Users/TK/projects/beehive/app/views/statuses/_form.html.erb",
-		"/Users/TK/projects/beehive/app/assets/stylesheets/bootstrap.css",
-		"/Users/TK/projects/beehive/app/models/status.rb",
-		"/Users/TK/projects/beehive/app/assets/stylesheets/scaffolds.css.scss",
-		"/Users/TK/projects/beehive/app/controllers/statuses_controller.rb",
-		"/Users/TK/projects/beehive/app/views/statuses/new.html.erb",
-		"/Users/TK/projects/beehive/app/controllers/application_controller.rb",
-		"/Users/TK/Dropbox/cs50/final/helloworld/popup.html",
-		"/Users/TK/Dropbox/cs50/final/helloworld/manifest.json",
-		"/Users/TK/Dropbox/cs50/final/helloworld/popup.js",
-		"/Users/TK/Dropbox/cs50/Final Project/1.9.10.2_0/popup.html",
-		"/Users/TK/Dropbox/cs50/Final Project/1.9.10.2_0/lib/tweets_assembler.js",
-		"/Users/TK/Dropbox/cs50/Final Project/1.9.10.2_0/lib/debug.js",
-		"/Users/TK/Dropbox/cs50/final/twitter.js",
-		"/Users/TK/Downloads/service.js",
-		"/Users/TK/Dropbox/pset8/js/houses.js",
-		"/Users/TK/Dropbox/pset8/js/buildings.js",
-		"/Users/TK/Dropbox/pset7/templates/portfolio.php",
-		"/Users/TK/Dropbox/pset7/templates/apology.php",
-		"/Users/TK/Dropbox/pset7/public/css/styles.css",
-		"/Users/TK/Dropbox/pset7/public/login.php",
-		"/Users/TK/Dropbox/pset7/public/index.php",
-		"/Users/TK/Dropbox/pset7/templates/login_form.php",
-		"/Users/TK/Dropbox/pset7/includes/functions.php",
-		"/Users/TK/Dropbox/pset7/includes/config.php",
-		"/Users/TK/Dropbox/pset7/includes/constants.php",
-		"/Users/TK/Dropbox/pset7/public/js/jquery-1.10.2.js",
-		"/Users/TK/Dropbox/pset7/templates/header.php",
-		"/Users/TK/Dropbox/pset7/templates/dump.php"
+		"/Users/TK/treehouse/projects/busybee/spec/features/todo_items/delete_spec.rb"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -383,6 +350,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"authenticated_connection",
+			"developmen",
+			"unauthenticated_connection",
+			"david Luiz",
+			"delay",
+			"flatly",
+			"default",
+			"inverse",
+			"default",
+			"store_comments",
+			"puts",
+			"sleep",
+			"thread",
+			"Matchthread",
+			"theme",
 			",\n",
 			"end",
 			"LoginForm",
@@ -416,212 +398,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/models/matchthread.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1420,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1243,
-								1243
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/controllers/home_controller.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 323,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								83,
-								83
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/views/home/index.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 347,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								232,
-								232
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "config/routes.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1753,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								128,
-								128
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/controllers/matchthreads_controller.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 199,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								170,
-								170
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/views/matchthreads/show.html.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 69,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								68,
-								68
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "config/application.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1154,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								672,
-								672
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -706,7 +484,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 245.0,
+	"side_bar_width": 294.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
